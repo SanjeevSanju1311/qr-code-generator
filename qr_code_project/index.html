@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
+   
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa-solid fa-qrcode"></i>  QR Code Generator</h1>
+        <textarea id="textInput" placeholder="Enter text to generate QR Code"></textarea>
+        <button id="generateBtn" onclick="generateQRCode()">Generate QR Code  <i class="fa-solid fa-qrcode"></i></button>
+        <canvas id="qrCanvas"></canvas>
+        <div>
+            <button id="downloadBtn" onclick="downloadQRCode()" title="Download"><i class="fa-solid fa-download"></i></button>
+            <button id="clearBtn" onclick="clearFields()" title="Clear"><i class="fa-solid fa-trash"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

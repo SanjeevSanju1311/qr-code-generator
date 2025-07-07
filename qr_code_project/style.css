@@ -1,0 +1,102 @@
+ body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(-45deg, #cac1c1, #fcbfe2, #b2addf, #9eebeb);
+            background-size: 400% 400%;
+            animation: gradientBG 10s ease infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #fff;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            max-width: 500px;
+            width: 100%;
+            padding: 20px;
+              background: linear-gradient(-45deg, #050505, #cab3c6, #0ad7e6, #080808);
+            
+            border-radius: 15px;
+            
+             box-shadow: 0 0 15px rgba(106, 17, 203, 0.5);
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin: 1px ;
+            padding: 1px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+            outline: none;
+            resize: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        textarea:focus {
+            border-color: #6A11CB;
+            box-shadow: 0 0 15px rgba(106, 17, 203, 0.5);
+        }
+
+        button {
+            padding: 12px 20px;
+            margin: 10px 5px;
+            background-color: #6A11CB;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #2575FC;
+            transform: scale(1.05);
+        }
+
+        button:active {
+            transform: scale(0.95);
+        }
+
+        canvas {
+            margin-top: 20px;
+            border: 2px dashed #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            background: #f9f9f9;
+            animation: fadeIn 0.8s ease-in-out;
+            margin-left: 80px;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+       
+        #downloadBtn, #clearBtn, canvas {
+            display: none;
+        }
